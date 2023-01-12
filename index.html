@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- библиотека анимаций -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="is-loading">
+    <div id="preloader">
+        <div class="txt">
+            <p class="txt-perc">0%</p>
+            <div class="progress"><span></span></div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="header__logo-block">
+                    <div class="header__logo">
+                        <img src="images/icons/logo_top.svg" alt="Лого">
+                    </div>
+                    <div class="header__logo-mob">
+                        <img src="images/icons/logo_mob.svg" alt="">
+                    </div>
+                    <div class="header__text">
+                        Проектирование и реализация<br> дизайна интерьеров 
+                    </div>
+                </div>
+                
+                <div class="header__info-block">
+                    <div class="header__info-block_column">
+                        <div class="header__phone">
+                            <a href="tel:+7 (909) 906-75-60">+7 (909) 906-75-60</a>
+                        </div>
+                        <div class="header__mail">
+                            <a href="mailto:info@etalon-k.ru">info@etalon-k.ru</a>
+                        </div>
+                    </div>
+                    <div class="header__info-block_column">
+                        <div class="header__address">
+                            г. Москва, ул. Бутлерова, 17 2й этаж
+                        </div>
+                        <div class="header__time">
+                            Пн. - Пт.: с 9:00 до 21:00
+                        </div>
+                    </div>
+                </div>
+                <div class="header__search">
+                    <button type="button" class="button-search">
+                        <img src="images/icons/ei_search.svg" alt="">
+                    </button>
+                </div>
+                <a  href="#callback" type="button" class="btn btn--green btn--callback btn--popup">
+                    <div class="mobile_icon">
+                        <img src="images/icons/carbon_phone-voice-filled.svg" alt="">
+                    </div>
+                    <span>
+                        Заказать звонок
+                    </span>               
+                </a>
+                <button class="header__burger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M4.125 6.375H19.875M4.125 18.375H19.875H4.125ZM4.125 12.375H19.875H4.125Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <nav class="header__nav">
+                    <a href="#about" class="header__link smooth_scroll">наша Компания</a>
+                    <a href="#service" class="header__link smooth_scroll">Услуги и цены</a>
+                    <a href="#projects" class="header__link smooth_scroll">Проекты</a>
+                    <a href="#about" class="header__link smooth_scroll">Информация</a>
+                    <a href="#" class="header__link">Контакты</a>
+                </nav>
+            </div>
+        </div>
+        <div class="burger">
+            <div class="burger__title">
+                <div class="burger__logo">
+                    <img src="images/icons/burger_logo.svg" alt="Лого">
+                </div>
+                <button class="header__burger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M4.125 20.9692L20.8137 4.17865M4.125 4.17865L20.8137 20.9692" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+            </div>
+            <div class="burger__main">
+                <a href="#" class="burger__link">наша Компания</a>
+                <a href="#" class="burger__link">Услуги и цены</a>
+                <a href="#" class="burger__link">Проекты</a>
+                <a href="#" class="burger__link">Информация</a>
+                <a href="#" class="burger__link">Контакты</a>
+            </div>
+            <div class="burger__footer">
+                <div class="header__phone">
+                    <a href="tel:+7 (909) 906-75-60">+7 (909) 906-75-60</a>
+                </div>
+                <div class="header__address">
+                    г. Москва, ул. Бутлерова, 17 2й этаж
+                </div>
+                <div class="header__time">
+                    Пн. - Пт.: с 9:00 до 21:00
+                </div>
+                <div class="header__mail">
+                    <a href="mailto:info@etalon-k.ru">info@etalon-k.ru</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="top-slider">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide top-slider__slide " style="background-image:url('images/top_slider/image 1.png')">
+                    
+                    <div class="top-slider__block container">
+                        <div class="top-slider__text">
+                            <span>
+                                Решаем любые вопросы 
+                                в проектировании и реализации дизайна интерьера 
+                            </span>
+                            <div  class="top-slider__text-cont">
+                                <span class="result-text"></span>
+                                <div class="strings-elem">
+                                    <!-- cписок слов чтобы выводить -->
+                                    <span>квартир</span>
+                                    <span>домов</span>
+                                    <span>неквартир</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="top-slider__buttons-cont">
+                            <a href="#" class="btn btn--white">
+                                <span>
+                                    Подробнее
+                                </span>
+                            </a>
+                            <a href="#callproject" type="button" class="btn btn--green btn--popup">
+                                <span>
+                                    Заказать проект
+                                </span>                    
+                            </a>
+                        </div>
+                    </div>
+                    
+
+                  </div>
+                  <div class="swiper-slide top-slider__slide " style="background-image:url('images/top_slider/image 1.png')">
+                    
+                    <div class="top-slider__block container">
+                        <div class="top-slider__text">
+                            <span>
+                                Решаем любые вопросы 
+                                в проектировании и реализации дизайна интерьера 
+                            </span>
+                            <div  class="top-slider__text-cont">
+                                <span class="result-text"></span>
+                                <div class="strings-elem">
+                                    <span>квартир</span>
+                                    <span>домов</span>
+                                    <span>неквартир</span>
+                                    <span>неквартир2</span>
+                                    <span>неквартир3</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="top-slider__buttons-cont">
+                            <a href="#" class="btn btn--white">
+                                <span>
+                                    Подробнее
+                                </span>
+                            </a>
+                            <a href="#zakaz" type="button" class="btn btn--green">
+                                <span>
+                                    Заказать проект
+                                </span>                    
+                            </a>
+                        </div>
+                    </div>
+                    
+
+                  </div>
+                </div>
+                <div class="top-slider__bottom container">
+                    <a href="#service" class="scroll-button smooth_scroll">
+                        <img src="images/anim.gif" alt="">
+                    </a>
+                    <div class="top-slider__nav">
+                        <div class="top-slider__buttons">
+                            <div class="swiper-button-prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.762 1.0368C12.5711 1.25292 12.3924 1.46141 12.3648 1.5001C12.3205 1.56227 12.7316 1.93931 15.8806 4.72458L19.4467 7.87864L10.0554 7.88898L0.664063 7.89932V8.51465V9.12998L10.0554 9.14032L19.4467 9.15066L15.8806 12.3047C12.7316 15.09 12.3205 15.467 12.3648 15.5292C12.3924 15.5679 12.5711 15.7764 12.762 15.9925C13.099 16.3742 13.1114 16.3835 13.1945 16.3174C13.2415 16.2799 15.1664 14.5805 17.4721 12.5408L21.6641 8.83228V8.51465V8.19701L17.4721 4.48852C15.1664 2.44882 13.2415 0.749366 13.1945 0.711944C13.1114 0.64584 13.099 0.655113 12.762 1.0368Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="swiper-button-next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.762 1.0368C12.5711 1.25292 12.3924 1.46141 12.3648 1.5001C12.3205 1.56227 12.7316 1.93931 15.8806 4.72458L19.4467 7.87864L10.0554 7.88898L0.664063 7.89932V8.51465V9.12998L10.0554 9.14032L19.4467 9.15066L15.8806 12.3047C12.7316 15.09 12.3205 15.467 12.3648 15.5292C12.3924 15.5679 12.5711 15.7764 12.762 15.9925C13.099 16.3742 13.1114 16.3835 13.1945 16.3174C13.2415 16.2799 15.1664 14.5805 17.4721 12.5408L21.6641 8.83228V8.51465V8.19701L17.4721 4.48852C15.1664 2.44882 13.2415 0.749366 13.1945 0.711944C13.1114 0.64584 13.099 0.655113 12.762 1.0368Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <a href="#callcalc" class="calculator btn btn--orange btn--popup" >
+                <span>
+                    Калькулятор
+                </span>
+                <img src="images/icons/ic_sharp-calculate.svg" alt="">
+
+            </a>
+        </section>
+        <section id="service" class="our-service">
+            <div class="container">
+                <div class="title">
+                    <h2 class="wow fadeInUp" data-wow-duration="1s">
+                        Наши услуги
+                    </h2>
+                </div>
+                
+                <div class="our-service__container our-service__left bg-img--left js-hover-block wow fadeInUp" data-wow-duration="1s">
+                    <div class="our-service__list " >
+                        <div class="our-service__list-block">
+                            <h3 class="our-service__title">
+                                комплексный Дизайн-проект
+                            </h3>
+                            <div class="our-service__list-service">
+                                <div class="our-service__for-what">
+                                    Жилая недвижимость
+                                </div>
+                                <div class="our-service__cont-name">
+                                    <a href="#price_block" class="our-service__name-service js-hover smooth_scroll">
+                                        Дизайн интерьера квартир
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="our-service__list-service">
+                                <div class="our-service__for-what">
+                                    Коммерческая недвижимость	
+                                </div>
+                                <div class="our-service__cont-name">
+                                    <a href="#price_block" class="our-service__name-service js-hover smooth_scroll">
+                                        Дизайн интерьера офисов
+                                    </a>
+                                    <a href="#price_block" class="our-service__name-service js-hover smooth_scroll">
+                                        Дизайн интерьера магазинов
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <hr class="our-service__devider">
+                        <div class="our-service__list-block">
+                            <h3 href="#form_consult" class="our-service__title js-hover smooth_scroll">
+                                3D визуализация интерьера
+                            </h3>
+                            <div class="our-service__subtitle">
+                                создания трехмерной модели пространства
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="our-service__cont-img " >
+                        <img class="lozad js-hover-img hovered" data-src="images/services/1.png" alt="">
+                        <img class="lozad js-hover-img" data-src="images/services/2.png" alt="">
+                        <img class="lozad js-hover-img" data-src="images/services/3.png" alt="">
+                        <img class="lozad js-hover-img" data-src="images/services/4.png" alt="">
+                    </div>
+                </div>
+                <div class="our-service__container our-service__right bg-img--right js-hover-block wow fadeInUp" data-wow-duration="1s">
+                    <div class="our-service__cont-img " >
+                        <img class="lozad js-hover-img hovered" data-src="images/services/1.png" alt="">
+                        <img class="lozad js-hover-img" data-src="images/services/2.png" alt="">
+                        <img class="lozad js-hover-img" data-src="images/services/3.png" alt="">
+                        <img class="lozad js-hover-img" data-src="images/services/4.png" alt="">
+                    </div>
+                    <div class="our-service__list ">
+                        <div class="our-service__list-block">
+                            <h3 href="#form_consult" class="our-service__title js-hover smooth_scroll">
+                                Строительные работы
+                            </h3>
+                            <div class="our-service__subtitle">
+                                строительство офисных, торговых, складских и производственных зданий
+                            </div>
+                        </div>
+                        <hr class="our-service__devider">
+                        <div class="our-service__list-block">
+                            <h3 href="#form_consult" class="our-service__title js-hover smooth_scroll">
+                                Обслуживание
+                            </h3>
+                            <div class="our-service__subtitle">
+                                Постремонтное обслуживание
+                            </div>
+                        </div>
+                        <hr class="our-service__devider">
+                        <div class="our-service__list-block">
+                            <h3 href="#form_consult" class="our-service__title js-hover smooth_scroll">
+                                Авторский надзор
+                            </h3>
+                            <div class="our-service__subtitle">
+                                контроль и сопровождение ремонтных работ
+                            </div>
+                        </div>
+                        <hr class="our-service__devider">
+                        <div class="our-service__list-block">
+                            <h3 href="#form_consult" class="our-service__title js-hover smooth_scroll">
+                                технический надзор
+                            </h3>
+                            <div class="our-service__subtitle">
+                                Оценка качества выполняемых работ
+                            </div>
+                        </div>
+                        <hr class="our-service__devider">
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </section>
+        <section class="our-service-mob">
+            <div class="container">
+                <div class="our-service-mob__block wow fadeInUp" data-wow-duration="1s">
+                    <div class="our-service-mob__img">
+                        <a href="#">
+                            <img class="lozad" data-src="images/services/1.png" alt="">
+                        </a>
+                        
+                    </div>
+                    <div class="our-service-mob__title">
+                        <a href="#">
+                            комплексный Дизайн-проект
+                        </a>
+                        
+                    </div>
+                    <div class="our-service-mob__object">
+                        Жилая недвижимость 
+                    </div>
+                    <div class="our-service-mob__name">
+                        Дизайн интерьера квартир
+                    </div>
+                </div>
+                <div class="our-service-mob__block wow fadeInUp" data-wow-duration="1s">
+                    <div class="our-service-mob__img">
+                        <img class="lozad" data-src="images/services_mob/2.png" alt="">
+                    </div>
+                    
+                    <div class="our-service-mob__object">
+                        Коммерческая недвижимость	
+                    </div>
+                    <div class="our-service-mob__name">
+                        Дизайн интерьера офисов
+                    </div>
+                </div>
+                <div class="our-service-mob__block wow fadeInUp" data-wow-duration="1s">
+                    <div class="our-service-mob__img">
+                        <img class="lozad" data-src="images/services_mob/3.png" alt="">
+                    </div>
+                    
+                    <div class="our-service-mob__object">
+                        Коммерческая недвижимость	
+                    </div>
+                    <div class="our-service-mob__name">
+                        Дизайн интерьера магазинов
+                    </div>
+                </div>
+                <div class="our-service-mob__block wow fadeInUp" data-wow-duration="1s">
+                    <div class="our-service-mob__img">
+                        <img class="lozad" data-src="images/services_mob/4.png" alt="">
+                    </div>
+                    <div class="our-service-mob__title">
+                        3D визуализация интерьера
+                    </div>
+                    <div class="our-service-mob__object">
+                        создания трехмерной модели пространства
+                    </div>
+                    
+                </div>
+                <div class="our-service-mob__block wow fadeInUp" data-wow-duration="1s">
+                    <div class="our-service-mob__img">
+                        <img class="lozad" data-src="images/services_mob/5.png" alt="">
+                    </div>
+                    <div class="our-service-mob__title">
+                        Строительные работы
+                    </div>
+                    
+                    <div class="our-service-mob__object">
+                        строительство офисных, торговых, складских и производственных зданий
+                    </div>
+                </div>
+                <div class="our-service-mob__block wow fadeInUp" data-wow-duration="1s">
+                    <div class="our-service-mob__img">
+                        <img class="lozad" data-src="images/services_mob/6.png" alt="">
+                    </div>
+                    <div class="our-service-mob__title">
+                        Обслуживание
+                    </div>
+                    
+                    <div class="our-service-mob__object">
+                        Постремонтное обслуживание
+                    </div>
+                </div>
+                <div class="our-service-mob__block wow fadeInUp" data-wow-duration="1s">
+                    <div class="our-service-mob__img">
+                        <img class="lozad" data-src="images/services_mob/7.png" alt="">
+                    </div>
+                    <div class="our-service-mob__title">
+                        Авторский надзор
+                    </div>
+                    <div class="our-service-mob__object">
+                        контроль и сопровождение ремонтных работ
+                    </div>
+                    
+                </div>
+                <div class="our-service-mob__block wow fadeInUp" data-wow-duration="1s">
+                    <div class="our-service-mob__img">
+                        <img class="lozad" data-src="images/services_mob/8.png" alt="">
+                    </div>
+                    <div class="our-service-mob__title">
+                        технический надзор
+                    </div>
+                    <div class="our-service-mob__object">
+                        Оценка качества выполняемых работ
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="title">
+                    <h2 class="wow fadeInUp" data-wow-duration="1s">
+                        Проекты
+                    </h2>
+                </div>
+                
+                <div class="projects__container">
+                    <div class="projects__block projects__block--right projects__one-image wow fadeInUp" data-wow-duration="1s">
+                        <div class="projects__text-block">
+                            <div class="projects__object">
+                                1-комн. квартира  /  70 м2
+                            </div>
+                            <div href="#price_block" class="projects__name-project smooth_scroll">
+                                Дизайн проект квартиры в ЖК "Скайфорт"
+                            </div>
+                            <div class="projects__name-design">
+                                # дизайн проект квартир
+                            </div>
+                            <a href="#price_block" class="btn btn--white smooth_scroll">
+                                <span>
+                                    Подробнее
+                                </span>
+                                
+                            </a>
+                        </div>
+                        <div class="projects__img">
+                            <img class="lozad" data-src="images/projects/1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="projects__block projects__block--left projects__two-image wow fadeInUp" data-wow-duration="1s">
+                        <div class="projects__img">
+                            <img class="lozad" data-src="images/projects/2.png" alt="">
+                            <img class="lozad" data-src="images/projects/3.png" alt="">
+                        </div>
+                        <div class="projects__text-block">
+                            <div class="projects__object">
+                                3-комн. квартира  /  120 м2 
+                            </div>
+                            <div href="#price_block" class="projects__name-project smooth_scroll">
+                                Дизайн проект квартиры в Москва Сити
+                            </div>
+                            <div class="projects__name-design">
+                                # дизайн проект квартир
+                            </div>
+                            <a href="#price_block" class="btn btn--white smooth_scroll">
+                                <span>
+                                    Подробнее
+                                </span>
+                                
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="projects__block projects__block--right projects__two-image wow fadeInUp" data-wow-duration="1s">
+                        
+                        <div class="projects__text-block">
+                            <div class="projects__object">
+                                4-комн. квартира  /  120 м2
+                            </div>
+                            <div href="#price_block" class="projects__name-project smooth_scroll">
+                                Дизайн проект квартиры в ЖК "Альбатрос"
+                            </div>
+                            <div class="projects__name-design">
+                                # ремонт квартир
+                            </div>
+                            <a href="#price_block" class="btn btn--white smooth_scroll">
+                                <span>
+                                    Подробнее
+                                </span>
+                                
+                            </a>
+                        </div>
+                        <div class="projects__img">
+                            <img class="lozad" data-src="images/projects/4.png" alt="">
+                            <img class="lozad" data-src="images/projects/5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="projects__block projects__block--left projects__one-image wow fadeInUp" data-wow-duration="1s">
+                        <div class="projects__img">
+                            <img class="lozad" data-src="images/projects/6.png" alt="">
+                        </div>
+                        <div class="projects__text-block">
+                            <div class="projects__object">
+                                для управляющей компании сетью салонов красоты  /  640 м2
+                            </div>
+                            <div href="#price_block" class="projects__name-project smooth_scroll">
+                                Дизайн проект офиса 
+                            </div>
+                            <div class="projects__name-design">
+                                # ремонт коммерческой недвижимости
+                            </div>
+                            <a href="#" class="btn btn--white">
+                                <span>
+                                    Подробнее
+                                </span>
+                                
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mini-projects">
+            <div class="container">
+                <a href="#" class="mini-projects__block wow fadeInUp" data-wow-duration="1s">
+                    <div class="mini-projects__img">
+                        <img class="lozad" data-src="images/mini_projects/1.png" alt="">
+                    </div>
+                    <div class="mini-projects__text-block">
+                        <div class="mini-projects__place-project">
+                            Установлено 16 радиаторов  /  450 м2
+                        </div>
+                        <div class="mini-projects__name-project">
+                            Проект и монтаж системы отопления в загородном доме
+                        </div>
+                        <div class="mini-projects__about-project">
+                            # Ремонт домов и коттеджей
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="mini-projects__block wow fadeInUp" data-wow-duration="1s">
+                    <div class="mini-projects__img">
+                        <img class="lozad" data-src="images/mini_projects/2.png" alt="">
+                    </div>
+                    <div class="mini-projects__text-block">
+                        <div class="mini-projects__place-project">
+                            москва, ул.Каланчевская, 17  /  за 7 дней
+                        </div>
+                        <div class="mini-projects__name-project">
+                            Сетевое кафе "ДАБЛБИ" 
+                        </div>
+                        <div class="mini-projects__about-project">
+                            # ремонт коммерческой недвижимости
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="mini-projects__block wow fadeInUp" data-wow-duration="1s">
+                    <div class="mini-projects__img">
+                        <img class="lozad" data-src="images/mini_projects/3.png" alt="">
+                    </div>
+                    <div class="mini-projects__text-block">
+                        <div class="mini-projects__place-project">
+                            дом в лесном массиве  /  330 м2
+                        </div>
+                        <div class="mini-projects__name-project">
+                            Ремонт коттеджа в Новогорске
+                        </div>
+                        <div class="mini-projects__about-project">
+                            # Ремонт домов и коттеджей
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="btn btn--green"> <span>Смотреть все проекты</span> </a>
+            </div>
+            
+        </section>
+        <section id="price_block" class="price">
+            <div class="container">
+                <div class="title">
+                    <h2 class="wow fadeInUp" data-wow-duration="1s">
+                        Стоимость
+                    </h2>
+                </div>
+                
+                <div class="price__cont wow fadeInUp" data-wow-duration="1s">
+                    <div class="price__text-block">
+                        <div class="price__title">
+                            «комплексный Дизайн-проект»
+                        </div>
+                        <div class="price__about-design">
+                            Дизайн-проект представляет собой сложный пакет документов с различными вариантами компоновки, 3D визуализацией концепции будущего интерьера, рабочими чертежами и перечнем всех отделочных материалов и мебели.  
+                        </div>
+                        <div class="price__list">
+                            <div>
+                                Включает в себя
+                            </div>
+                            <ul>
+                                <li>консультация дизайнера</li>
+                                <li>планировочное решение</li>
+                                <li>разработку концепции</li>
+                                <li>внутреннее наполнение (отделочные материалы, мебель, оборудование)</li>
+                                <li>набор рабочих чертежей</li>
+                            </ul>
+                        </div>
+                        <div class="price__price-from">
+                            <span>от</span>
+                            <span class="price__total">
+                                35000
+                            </span>
+                            <span>
+                                ₽/м2
+                            </span>
+                        </div>
+                        <div class="price__buttons">
+                            <a href="#" class="btn btn--white">
+                                <span>
+                                    Подробнее
+                                </span>
+                                
+                            </a>
+                            <a href="#callcalc" class="btn btn--orange btn--popup">
+                                <span>
+                                    Заказать расчёт
+                                </span>
+                                
+                            </a>
+                        </div>
+                    </div>
+                    <div class="price__img-block">
+                        <!-- <div class="price__img-block__row">
+                            <img class="lozad" data-src="images/price/1.png" alt="">
+                            <img class="lozad" data-src="images/price/2.png" alt="">
+                        </div>
+                        <div class="price__img-block__row">
+                            <img class="lozad" data-src="images/price/3.png" alt="">
+                            <img class="lozad" data-src="images/price/4.png" alt="">
+                        </div> -->
+                        
+                        <img class="price__main-img lozad"  data-src="images/price/Img design complex.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="form_consult" class="form form--consult wow fadeInUp" data-wow-duration="1s">
+            <div class="container">
+                <div class="form__cont">
+                    <div class="form__img ">
+                        <div class="form__first-img">
+                            <img class="lozad" data-src="images/form/3.png" alt="">
+                        </div>
+                        <div class="form__second-img">
+                            <img class="lozad" data-src="images/form/4.png" alt="">
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="form__text-block wow fadeInUp" data-wow-duration="1s">
+                        <div class="form__subtitle">
+                            бесплатно
+                        </div>
+                        <div class="form__title">
+                            Получить консультацию
+                        </div>
+                        <form action="#" class="form__form">
+                            <div class="form__row">
+                                <input type="text" name="name" class="required">
+                                <span  class="required form__placeholder ">Ваше имя</span>
+                            </div>
+                            <div class="form__row">
+                                <input type="text" name="phone" class="phone_mask required">
+                                <span class="required form__placeholder">+7(___)___-__-__ </span>
+                            </div>
+                            <div class="form__row">
+                                <input type="text">
+                                <span class="form__placeholder">Email</span>
+                            </div>
+                            <div class="form__row">
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                <span class="form__placeholder">
+                                    Опишите ваш проект
+                                </span>
+                            </div>
+                            <div class="form__row">
+                                <div class="form__personal">
+                                    <div class="custom_checkbox">
+                                        <input type="checkbox" class="required" name="agree" id="checkbox1" checked>
+                                        <label for="checkbox1" class="custom_label">
+                                            <div class="checkbox">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                                    <path d="M1 3.67351L4.99452 7L11 1" stroke="white"/>
+                                                </svg>
+                                            </div>
+                                            <span>
+                                                Согласен на обработку персональныx данных
+                                            </span>
+                                        </label>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <!-- <a href="#thankrequest" class="btn btn--orange btn--thanks">
+                                    <span>
+                                        Отправить
+                                    </span>
+                                </a> -->
+                                <button   class="btn btn--orange">
+                                    <span>
+                                        Отправить
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about" >
+            <div class="container">
+                <div class="title">
+                    <h2 class="wow fadeInUp" data-wow-duration="1s">О нас</h2>
+                </div>
+                
+                <div class="about__date wow fadeInUp" data-wow-duration="1s">
+                    Компания "Эталон-Комфорта" основана в марте 2005 года. <br>
+                    На осень 2021 года более 1000 семей живут в квартирах отремонтированных, нашей компанией. 
+                </div>
+                <div class="about__company wow fadeInUp" data-wow-duration="1s">
+                    «Эталон-Комфорта» — строительно-ремонтная компания, ведущая работы в Москве и Подмосковье. Более 10 лет мы выполняем ремонты квартир и других жилых помещений, коммерческой недвижимости, общественных пространств. За годы существования мы реализовали сотни проектов в Москве и области. На все выполненные работы предоставляется гарантия.
+                </div>
+                <div class="about__list">
+                    <div class="about__list-block wow fadeInUp" data-wow-duration="1s">
+                        <div class="about__icon">
+                            <img src="images/icons/ri_timer-line.svg" alt="">
+                        </div>
+                        <div class="about__text">
+                            Минимум времени на ремонт и выбор деталей интерьера
+                        </div>
+                    </div>
+                    <div class="about__list-block wow fadeInUp" data-wow-duration="1s">
+                        <div class="about__icon">
+                            <img src="images/icons/ri_exchange-dollar-line.svg" alt="">
+                        </div>
+                        <div class="about__text">
+                            Четкое, прозрачное финансовое ведение проекта
+                        </div>
+                    </div>
+                    <div class="about__list-block wow fadeInUp" data-wow-duration="1s">
+                        <div class="about__icon">
+                            <img src="images/icons/ri_file-list-2-line.svg" alt="">
+                        </div>
+                        <div class="about__text">
+                            Помощь в составлении ТЗ
+                        </div>
+                    </div>
+                    <div class="about__list-block wow fadeInUp" data-wow-duration="1s">
+                        <div class="about__icon">
+                            <img src="images/icons/ri_stack-line.svg" alt="">
+                        </div>
+                        <div class="about__text">
+                            Информирование о ходе каждого этапа ремонта
+                        </div>
+                    </div>
+                    <div class="about__list-block wow fadeInUp" data-wow-duration="1s">
+                        <div class="about__icon">
+                            <img src="images/icons/ri_messenger-line.svg" alt="">
+                        </div>
+                        <div class="about__text">
+                            Комфортное общение с дизайнером
+                        </div>
+                    </div>
+                    <div class="about__list-block wow fadeInUp" data-wow-duration="1s">
+                        <div class="about__icon">
+                            <img src="images/icons/ri_star-line.svg" alt="">
+                        </div>
+                        <div class="about__text">
+                            Результат, который ожидает увидеть клиент, в установленные сроки
+                        </div>
+                    </div>
+                    <div class="about__list-block wow fadeInUp" data-wow-duration="1s">
+                        <div class="about__icon">
+                            <img src="images/icons/ri_creative-commons-by-line.svg" alt="">
+                        </div>
+                        <div class="about__text">
+                            Дизайнер все держит под контролем и слышит клиента
+                        </div>
+                    </div>
+                    <div class="about__list-block wow fadeInUp" data-wow-duration="1s">
+                        <div class="about__icon">
+                            <img src="images/icons/ri_shield-star-line.svg" alt="">
+                        </div>
+                        <div class="about__text">
+                            Качество в деталях и внимательное отношение ко всем участникам процесса
+                        </div>
+                    </div>
+                </div>
+                <div class="popular">
+                    <div class="popular__img wow fadeInUp" data-wow-duration="1s">
+                        <div class="popular__img1">
+                            <img class="lozad" data-src="images/popular/1.png" alt="">
+                        </div>
+                        <div class="popular__img2">
+                            <img class="lozad" data-src="images/popular/2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="popular__text wow fadeInUp" data-wow-duration="1s">
+                        <div class="popular__title">
+                            Самые популярные услуги
+                        </div>
+                        <p>
+                            Косметический ремонт, обновление помещения. Это незначительные изменения пространства, без сложных конструктивных работ. Косметический ремонт стоит недорого, точная цена зависит от выбранного пакета. Выберите предложение, и мы рассчитаем, сколько будет стоить обновление квартиры.
+                        </p>
+                        <p>
+                            В ходе работ мы меняем облик дома, квартиры или другого помещения, без перепланировки. Ремонт ведется с использованием современных отделочных материалов. При этом вы точно знаете, сколько заплатите, на момент подписания договора. Будьте уверены: никаких доплат не потребуется.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <div class="news__title wow fadeInUp" data-wow-duration="1s">
+                    <h2 class="wow fadeInUp" data-wow-duration="1s">
+                        Новости
+                    </h2>
+                    <div class="news__scrollbar">
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <div class="news__nav">
+                        <div class="swiper-button-prev news__btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.762 1.0368C12.5711 1.25292 12.3924 1.46141 12.3648 1.5001C12.3205 1.56227 12.7316 1.93931 15.8806 4.72458L19.4467 7.87864L10.0554 7.88898L0.664063 7.89932V8.51465V9.12998L10.0554 9.14032L19.4467 9.15066L15.8806 12.3047C12.7316 15.09 12.3205 15.467 12.3648 15.5292C12.3924 15.5679 12.5711 15.7764 12.762 15.9925C13.099 16.3742 13.1114 16.3835 13.1945 16.3174C13.2415 16.2799 15.1664 14.5805 17.4721 12.5408L21.6641 8.83228V8.51465V8.19701L17.4721 4.48852C15.1664 2.44882 13.2415 0.749366 13.1945 0.711944C13.1114 0.64584 13.099 0.655113 12.762 1.0368Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-next news__btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.762 1.0368C12.5711 1.25292 12.3924 1.46141 12.3648 1.5001C12.3205 1.56227 12.7316 1.93931 15.8806 4.72458L19.4467 7.87864L10.0554 7.88898L0.664063 7.89932V8.51465V9.12998L10.0554 9.14032L19.4467 9.15066L15.8806 12.3047C12.7316 15.09 12.3205 15.467 12.3648 15.5292C12.3924 15.5679 12.5711 15.7764 12.762 15.9925C13.099 16.3742 13.1114 16.3835 13.1945 16.3174C13.2415 16.2799 15.1664 14.5805 17.4721 12.5408L21.6641 8.83228V8.51465V8.19701L17.4721 4.48852C15.1664 2.44882 13.2415 0.749366 13.1945 0.711944C13.1114 0.64584 13.099 0.655113 12.762 1.0368Z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="news__slider swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <a href="#" class="news__block">
+                                <div class="news__img">
+                                    <img class="swiper-lazy" data-src="images/news/1.png" alt="">
+                                </div>
+                                <div class="news__date">
+                                    31 июля 2020
+                                </div>
+                                <div class="news__name">
+                                    Ремонт в жк "Триколор"
+                                </div>
+                                <div class="news__text">
+                                    Приступаем к ремонту квартиры для молодой семьи. Площадь небольшая, но отсутствие несущих стен внутри квартиры позволяет максимально...
+                                </div>
+                                <div class="news__link">
+                                    <div  class="">Подробнее</div>
+                                </div>
+                                
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="news__block">
+                                <div class="news__img">
+                                    <img class="swiper-lazy" data-src="images/news/2.png" alt="">
+                                </div>
+                                <div class="news__date">
+                                    31 июля 2020
+                                </div>
+                                <div class="news__name">
+                                    ЖК «Испанские кварталы»
+                                </div>
+                                <div class="news__text">
+                                    Приступаем к ремонту квартиры для молодой семьи. Площадь небольшая, но отсутствие несущих стен внутри квартиры позволяет максимально...Компания «Эталон-Комфорта» работает в уютном ЖК «Испанские кварталы». Комплекс находится на территории новой Москвы, в 3 км от МКАД по Калужскому шоссе...
+                                </div>
+                                <div class="news__link">
+                                    <div class="">Подробнее</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="news__block">
+                                <div class="news__img">
+                                    <img class="swiper-lazy" data-src="images/news/3.png" alt="">
+                                </div>
+                                <div class="news__date">
+                                    31 июля 2020
+                                </div>
+                                <div class="news__name">
+                                    Работа на Волгоградском объекте идет полным ходом!
+                                </div>
+                                <div class="news__text">
+                                    Приступаем к ремонту квартиры для молодой семьи. Площадь небольшая, но отсутствие несущих стен внутри квартиры позволяет максимально...Компания «Эталон-Комфорта» работает в уютном ЖК «Испанские кварталы». Комплекс находится на территории новой Москвы, в 3 км от МКАД по Калужскому шоссе...
+                                </div>
+                                <div class="news__link">
+                                    <div href="#" class="">Подробнее</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="news__block">
+                                <div class="news__img">
+                                    <img class="swiper-lazy" data-src="images/news/4.png" alt="">
+                                </div>
+                                <div class="news__date">
+                                    31 июля 2020
+                                </div>
+                                <div class="news__name">
+                                    Ремонт на Бабаевской
+                                </div>
+                                <div class="news__text">
+                                    Приступаем к ремонту квартиры для молодой семьи. Площадь небольшая, но отсутствие несущих стен внутри квартиры позволяет максимально...На днях заканчиваем работы в квартире, расположенной на северо-востоке Москвы. Квартира находится в историческом районе, здесь много зелени и...
+                                </div>
+                                <div class="news__link">
+                                    <div href="#" class="">Подробнее</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="news__block">
+                                <div class="news__img">
+                                    <img class="swiper-lazy" data-src="images/news/4.png" alt="">
+                                </div>
+                                <div class="news__date">
+                                    31 июля 2020
+                                </div>
+                                <div class="news__name">
+                                    Ремонт на Бабаевской
+                                </div>
+                                <div class="news__text">
+                                    Приступаем к ремонту квартиры для молодой семьи. Площадь небольшая, но отсутствие несущих стен внутри квартиры позволяет максимально...На днях заканчиваем работы в квартире, расположенной на северо-востоке Москвы. Квартира находится в историческом районе, здесь много зелени и...
+                                </div>
+                                <div class="news__link">
+                                    <div  class="">Подробнее</div>
+                                </div>
+                            </a>
+                        </div>
+
+                      </div>
+                </div>
+                <a href="#" class="btn btn--green"><span>Все новости</span></a>
+            </div>
+            
+        </section>
+        <section class="form form--question wow fadeInUp" data-wow-duration="1s">
+            <div class="container">
+                <div class="form__cont">
+                    
+                    <div class="form__text-block ">
+                        <div class="form__subtitle">
+                            мы перезвоним через 10 мин.
+                        </div>
+                        <div class="form__title">
+                            Остались вопросы?
+                        </div>
+                        <form action="#" class="form__form">
+                            <div class="form__row">
+                                <input name="name" class="required" type="text">
+                                <span  class="required form__placeholder">Ваше имя</span>
+                            </div>
+                            <div class="form__row">
+                                <input name="phone" type="text" class="phone_mask required">
+                                <span class="required form__placeholder">+7(___)___-__-__ </span>
+                            </div>
+                            <div class="form__row">
+                                <input type="text">
+                                <span class="form__placeholder">Email</span>
+                            </div>
+                            <div class="form__row">
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                <span class="form__placeholder">
+                                    Ваш вопрос
+                                </span>
+                            </div>
+                            <div class="form__row">
+                                <div class="form__personal">
+                                    <div class="custom_checkbox">
+                                        <input type="checkbox" name="agree" id="checkbox2" checked>
+                                        <label for="checkbox2" class="custom_label">
+                                            <div class="checkbox">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                                    <path d="M1 3.67351L4.99452 7L11 1" stroke="white"/>
+                                                </svg>
+                                            </div>
+                                            <span>
+                                                Согласен на обработку персональныx данных
+                                            </span>
+                                        </label>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <a href="#thanksquetsion" class="btn btn--orange btn--thanks" style="display:none;">
+                                    <span>
+                                        Отправить
+                                    </span>
+                                </a>
+                                <button  class="btn btn--orange ">
+                                    <span>
+                                        Отправить
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="form__img wow fadeInUp" data-wow-duration="1s">
+                        <div class="form__first-img">
+                            <img class="lozad" data-src="images/form/1.png" alt="">
+                        </div>
+                        <div class="form__second-img">
+                            <img class="lozad" data-src="images/form/2.png" alt="">
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__cont">
+                <div class="footer__info wow fadeInUp" data-wow-duration="1s">
+                    <div class="footer__logo-block">
+                        <div class="footer__logo">
+                            <img src="images/icons/logo_footer.svg" alt="">
+                            
+                        </div>
+                        <span>
+                            Проектирование и реализация дизайна интерьеров 
+                        </span>
+                    </div>
+                        <div class="footer__adress-block">
+                            <div class="footer__adress">
+                                г. Москва, ул. Бутлерова 17 2й этаж
+                            </div>
+                            <div class="footer__work-hour">
+                                Пн. - Пт.: с 9:00 до 21:00
+                            </div>
+                        </div>
+                        <div class="footer__contact">
+                            <div class="footer__mail">
+                                <a href="mailto:info@etalon-k.ru">info@etalon-k.ru</a>
+                            </div>
+                            <div class="footer__phone">
+                                <a href="tel:+7 (909) 906-75-60">+7 (909) 906-75-60</a>
+                            </div>
+                            
+                        </div>
+                </div>
+                <div class="footer__links wow fadeInUp" data-wow-duration="1s">
+                    <a href="#" class="footer__link">Проекты</a>
+                    <a href="#" class="footer__link">Новости</a>
+                    <a href="#" class="footer__link">Калькулятор</a>
+                    <a href="#" class="footer__link">О компании</a>
+                    <a href="#" class="footer__link">Статьи</a>
+                    <a href="#" class="footer__link">Услуги</a>
+                    <a href="#" class="footer__link">Вакансии</a>
+                    <a href="#" class="footer__link">FAQ</a>
+                    <a href="#" class="footer__link">Контакты</a>
+                </div>
+                <div class="footer__socnet wow fadeInUp" data-wow-duration="1s">
+                    <div class="footer__socnet-title">
+                        Подписывайтесь на нас в социальных сетях
+                    </div>
+                    <div class="footer__socnets">
+                        <a href="#" class="footer__socnet-link">vk</a>
+
+                    </div>
+                    <div class="footer__socnet-title">
+                        пишите нам:
+                    </div>
+                    <div class="footer__socnets">
+
+                        <a href="#" class="footer__socnet-link">whatsapp</a>
+                        <a href="#" class="footer__socnet-link">google +</a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <a href="#">
+                        <img src="images/icons/logo 3.svg" alt="">
+                        <span>
+                            Pазработка сайта 
+                        </span>
+                    </a>
+                </div>  
+            </div>
+            
+        </div>
+        
+        </div>
+        
+    </footer>
+    <!-- попапы -->
+    <!-- Обратный звонок -->
+    <div id="callback" style="display:none;">
+        <div class="popup__cont">
+            <div class="form__text-block">
+                <div class="form__title">
+                    Заказать звонок
+                </div>
+                <div class="form__subtitle">
+                    Оставьте ваш номер телефона и наш менеджер перезвонит вам в течении 10-15 минут
+                </div>
+                <form action="#" class="form__form">
+                    <div class="form__row">
+                        <input name="name" type="text" class="required">
+                        <span  class="required form__placeholder">Ваше имя</span>
+                    </div>
+                    <div class="form__row">
+                        <input name="phone" type="text" class="phone_mask required">
+                        <span class="required form__placeholder">+7(___)___-__-__ </span>
+                    </div>
+                    <div class="form__row">
+                        <input type="text">
+                        <span class="form__placeholder">Email</span>
+                    </div>
+                    
+                    <div class="form__row">
+                        <div class="form__personal">
+                            <div class="custom_checkbox">
+                                <input type="checkbox" name="agree" id="checkbox3" checked>
+                                <label for="checkbox3" class="custom_label">
+                                    <div class="checkbox">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                            <path d="M1 3.67351L4.99452 7L11 1" stroke="white"/>
+                                        </svg>
+                                    </div>
+                                    <span>
+                                        Согласен на обработку персональныx данных
+                                    </span>
+                                </label>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <button href="#" class="btn btn--orange">
+                            <span>
+                                Отправить
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <button class="popup__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <g clip-path="url(#clip0_667_723)">
+                    <path d="M21.5667 20L30.7778 10.7889C30.9598 10.5763 31.0549 10.3029 31.0441 10.0233C31.0333 9.74363 30.9174 9.47837 30.7195 9.28049C30.5217 9.0826 30.2564 8.96668 29.9767 8.95588C29.6971 8.94507 29.4237 9.04019 29.2111 9.22222L20 18.4333L10.7889 9.21111C10.5797 9.00188 10.2959 8.88434 10 8.88434C9.70413 8.88434 9.42036 9.00188 9.21114 9.21111C9.00191 9.42034 8.88437 9.70411 8.88437 10C8.88437 10.2959 9.00191 10.5797 9.21114 10.7889L18.4334 20L9.21114 29.2111C9.09482 29.3107 9.00036 29.4333 8.93366 29.5711C8.86697 29.709 8.82949 29.8591 8.82358 30.0122C8.81767 30.1652 8.84346 30.3178 8.89932 30.4604C8.95518 30.6029 9.03991 30.7324 9.14819 30.8407C9.25647 30.949 9.38597 31.0337 9.52855 31.0896C9.67114 31.1455 9.82373 31.1712 9.97675 31.1653C10.1298 31.1594 10.2799 31.1219 10.4178 31.0553C10.5556 30.9886 10.6782 30.8941 10.7778 30.7778L20 21.5667L29.2111 30.7778C29.4237 30.9598 29.6971 31.0549 29.9767 31.0441C30.2564 31.0333 30.5217 30.9174 30.7195 30.7195C30.9174 30.5216 31.0333 30.2564 31.0441 29.9767C31.0549 29.6971 30.9598 29.4237 30.7778 29.2111L21.5667 20Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_667_723">
+                    <rect width="40" height="40" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </button>
+        </div>
+        
+    </div>
+    <!-- Заказать проект -->
+    <div id="callproject" style="display:none;">
+        <div class="popup__cont">
+            <div class="form__text-block">
+                <div class="form__title">
+                    Заказать проект
+                </div>
+                <div class="form__subtitle">
+                    оставьте заявку и мы С радостью обсудим Ваш проект и воплотим мечты в реальность!
+                </div>
+                <form action="#" class="form__form">
+                    <div class="form__row">
+                        <input name="name" class="required" type="text">
+                        <span  class="required form__placeholder">Ваше имя</span>
+                    </div>
+                    <div class="form__row">
+                        <input class="required" name="phone" type="text" class="phone_mask">
+                        <span class="required form__placeholder">+7(___)___-__-__ </span>
+                    </div>
+                    <div class="form__row">
+                        <input type="text">
+                        <span class="form__placeholder">Email</span>
+                    </div>
+                    
+                    <div class="form__row form__row--file">
+                        <input id="project-file" type="file" multiple> 
+                        <label for="project-file"></label>
+                        <span class="form__placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M24.3532 6.14373C21.4094 3.19998 16.6157 3.19998 13.675 6.14373L5.51878 14.2937C5.46565 14.3469 5.43753 14.4187 5.43753 14.4937C5.43753 14.5687 5.46565 14.6406 5.51878 14.6937L6.6719 15.8469C6.72461 15.8993 6.79596 15.9288 6.87034 15.9288C6.94472 15.9288 7.01607 15.8993 7.06878 15.8469L15.225 7.69685C16.2375 6.68435 17.5844 6.1281 19.0157 6.1281C20.4469 6.1281 21.7938 6.68435 22.8032 7.69685C23.8157 8.70935 24.3719 10.0562 24.3719 11.4844C24.3719 12.9156 23.8157 14.2594 22.8032 15.2719L14.4907 23.5812L13.1438 24.9281C11.8844 26.1875 9.83753 26.1875 8.57815 24.9281C7.96878 24.3187 7.6344 23.5093 7.6344 22.6469C7.6344 21.7844 7.96878 20.975 8.57815 20.3656L16.825 12.1219C17.0344 11.9156 17.3094 11.8 17.6032 11.8H17.6063C17.9 11.8 18.1719 11.9156 18.3782 12.1219C18.5875 12.3312 18.7 12.6062 18.7 12.9C18.7 13.1906 18.5844 13.4656 18.3782 13.6719L11.6375 20.4062C11.5844 20.4594 11.5563 20.5312 11.5563 20.6062C11.5563 20.6812 11.5844 20.7531 11.6375 20.8062L12.7907 21.9594C12.8434 22.0118 12.9147 22.0413 12.9891 22.0413C13.0635 22.0413 13.1348 22.0118 13.1875 21.9594L19.925 15.2219C20.5469 14.6 20.8875 13.775 20.8875 12.8969C20.8875 12.0187 20.5438 11.1906 19.925 10.5718C18.6407 9.28747 16.5532 9.2906 15.2688 10.5718L14.4688 11.375L7.02503 18.8156C6.51981 19.3179 6.11934 19.9154 5.84683 20.5736C5.57432 21.2318 5.43519 21.9376 5.43753 22.65C5.43753 24.0968 6.00315 25.4562 7.02503 26.4781C8.0844 27.5343 9.4719 28.0625 10.8594 28.0625C12.2469 28.0625 13.6344 27.5343 14.6907 26.4781L24.3532 16.8218C25.775 15.3968 26.5625 13.5 26.5625 11.4844C26.5657 9.4656 25.7782 7.56873 24.3532 6.14373Z" fill="white"/>
+                            </svg>
+                            Прикрепите фото или доп. чертежи
+                        </span>
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__personal">
+                            <div class="custom_checkbox">
+                                <input type="checkbox" name="agree" id="checkbox4" checked>
+                                <label for="checkbox4" class="custom_label">
+                                    <div class="checkbox">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                            <path d="M1 3.67351L4.99452 7L11 1" stroke="white"/>
+                                        </svg>
+                                    </div>
+                                    <span>
+                                        Согласен на обработку персональныx данных
+                                    </span>
+                                </label>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <button type="submit" class="btn btn--orange">
+                            <span>
+                                Отправить
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <button class="popup__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <g clip-path="url(#clip0_667_723)">
+                    <path d="M21.5667 20L30.7778 10.7889C30.9598 10.5763 31.0549 10.3029 31.0441 10.0233C31.0333 9.74363 30.9174 9.47837 30.7195 9.28049C30.5217 9.0826 30.2564 8.96668 29.9767 8.95588C29.6971 8.94507 29.4237 9.04019 29.2111 9.22222L20 18.4333L10.7889 9.21111C10.5797 9.00188 10.2959 8.88434 10 8.88434C9.70413 8.88434 9.42036 9.00188 9.21114 9.21111C9.00191 9.42034 8.88437 9.70411 8.88437 10C8.88437 10.2959 9.00191 10.5797 9.21114 10.7889L18.4334 20L9.21114 29.2111C9.09482 29.3107 9.00036 29.4333 8.93366 29.5711C8.86697 29.709 8.82949 29.8591 8.82358 30.0122C8.81767 30.1652 8.84346 30.3178 8.89932 30.4604C8.95518 30.6029 9.03991 30.7324 9.14819 30.8407C9.25647 30.949 9.38597 31.0337 9.52855 31.0896C9.67114 31.1455 9.82373 31.1712 9.97675 31.1653C10.1298 31.1594 10.2799 31.1219 10.4178 31.0553C10.5556 30.9886 10.6782 30.8941 10.7778 30.7778L20 21.5667L29.2111 30.7778C29.4237 30.9598 29.6971 31.0549 29.9767 31.0441C30.2564 31.0333 30.5217 30.9174 30.7195 30.7195C30.9174 30.5216 31.0333 30.2564 31.0441 29.9767C31.0549 29.6971 30.9598 29.4237 30.7778 29.2111L21.5667 20Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_667_723">
+                    <rect width="40" height="40" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </button>
+        </div>
+        
+    </div>
+    <!-- Заказать расчёт -->
+    <div id="callcalc" style="display:none;">
+        <div class="popup__cont">
+            <div class="form__text-block">
+                <div class="form__title">
+                    Заказать расчёт
+                </div>
+                <div class="form__subtitle">
+                    оставьте заявку и мы С радостью обсудим Ваш проект и воплотим мечты в реальность!
+                </div>
+                <form action="#" class="form__form">
+                    <div class="form__row">
+                        <input name="name" class="required" type="text">
+                        <span  class="required form__placeholder">Ваше имя</span>
+                    </div>
+                    <div class="form__row">
+                        <input class="required" name="phone" type="text" class="phone_mask">
+                        <span class="required form__placeholder">+7(___)___-__-__ </span>
+                    </div>
+                    <div class="form__row">
+                        <input type="text">
+                        <span class="form__placeholder">Email</span>
+                    </div>
+                    
+                    <div class="form__row form__row--file">
+                        <input id="project-file2" type="file" multiple> 
+                        <label for="project-file2"></label>
+                        <span class="form__file-check">
+                            Файлы прикреплены.
+                        </span>
+                        <span class="form__placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M24.3532 6.14373C21.4094 3.19998 16.6157 3.19998 13.675 6.14373L5.51878 14.2937C5.46565 14.3469 5.43753 14.4187 5.43753 14.4937C5.43753 14.5687 5.46565 14.6406 5.51878 14.6937L6.6719 15.8469C6.72461 15.8993 6.79596 15.9288 6.87034 15.9288C6.94472 15.9288 7.01607 15.8993 7.06878 15.8469L15.225 7.69685C16.2375 6.68435 17.5844 6.1281 19.0157 6.1281C20.4469 6.1281 21.7938 6.68435 22.8032 7.69685C23.8157 8.70935 24.3719 10.0562 24.3719 11.4844C24.3719 12.9156 23.8157 14.2594 22.8032 15.2719L14.4907 23.5812L13.1438 24.9281C11.8844 26.1875 9.83753 26.1875 8.57815 24.9281C7.96878 24.3187 7.6344 23.5093 7.6344 22.6469C7.6344 21.7844 7.96878 20.975 8.57815 20.3656L16.825 12.1219C17.0344 11.9156 17.3094 11.8 17.6032 11.8H17.6063C17.9 11.8 18.1719 11.9156 18.3782 12.1219C18.5875 12.3312 18.7 12.6062 18.7 12.9C18.7 13.1906 18.5844 13.4656 18.3782 13.6719L11.6375 20.4062C11.5844 20.4594 11.5563 20.5312 11.5563 20.6062C11.5563 20.6812 11.5844 20.7531 11.6375 20.8062L12.7907 21.9594C12.8434 22.0118 12.9147 22.0413 12.9891 22.0413C13.0635 22.0413 13.1348 22.0118 13.1875 21.9594L19.925 15.2219C20.5469 14.6 20.8875 13.775 20.8875 12.8969C20.8875 12.0187 20.5438 11.1906 19.925 10.5718C18.6407 9.28747 16.5532 9.2906 15.2688 10.5718L14.4688 11.375L7.02503 18.8156C6.51981 19.3179 6.11934 19.9154 5.84683 20.5736C5.57432 21.2318 5.43519 21.9376 5.43753 22.65C5.43753 24.0968 6.00315 25.4562 7.02503 26.4781C8.0844 27.5343 9.4719 28.0625 10.8594 28.0625C12.2469 28.0625 13.6344 27.5343 14.6907 26.4781L24.3532 16.8218C25.775 15.3968 26.5625 13.5 26.5625 11.4844C26.5657 9.4656 25.7782 7.56873 24.3532 6.14373Z" fill="white"/>
+                            </svg>
+                            Прикрепите фото или доп. чертежи
+                        </span>
+                        
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__personal">
+                            <div class="custom_checkbox">
+                                <input type="checkbox" name="agree" id="checkbox4" checked>
+                                <label for="checkbox4" class="custom_label">
+                                    <div class="checkbox">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                            <path d="M1 3.67351L4.99452 7L11 1" stroke="white"/>
+                                        </svg>
+                                    </div>
+                                    <span>
+                                        Согласен на обработку персональныx данных
+                                    </span>
+                                </label>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <button type="submit" class="btn btn--orange">
+                            <span>
+                                Отправить
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <button class="popup__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <g clip-path="url(#clip0_667_723)">
+                    <path d="M21.5667 20L30.7778 10.7889C30.9598 10.5763 31.0549 10.3029 31.0441 10.0233C31.0333 9.74363 30.9174 9.47837 30.7195 9.28049C30.5217 9.0826 30.2564 8.96668 29.9767 8.95588C29.6971 8.94507 29.4237 9.04019 29.2111 9.22222L20 18.4333L10.7889 9.21111C10.5797 9.00188 10.2959 8.88434 10 8.88434C9.70413 8.88434 9.42036 9.00188 9.21114 9.21111C9.00191 9.42034 8.88437 9.70411 8.88437 10C8.88437 10.2959 9.00191 10.5797 9.21114 10.7889L18.4334 20L9.21114 29.2111C9.09482 29.3107 9.00036 29.4333 8.93366 29.5711C8.86697 29.709 8.82949 29.8591 8.82358 30.0122C8.81767 30.1652 8.84346 30.3178 8.89932 30.4604C8.95518 30.6029 9.03991 30.7324 9.14819 30.8407C9.25647 30.949 9.38597 31.0337 9.52855 31.0896C9.67114 31.1455 9.82373 31.1712 9.97675 31.1653C10.1298 31.1594 10.2799 31.1219 10.4178 31.0553C10.5556 30.9886 10.6782 30.8941 10.7778 30.7778L20 21.5667L29.2111 30.7778C29.4237 30.9598 29.6971 31.0549 29.9767 31.0441C30.2564 31.0333 30.5217 30.9174 30.7195 30.7195C30.9174 30.5216 31.0333 30.2564 31.0441 29.9767C31.0549 29.6971 30.9598 29.4237 30.7778 29.2111L21.5667 20Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_667_723">
+                    <rect width="40" height="40" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </button>
+        </div>
+        
+    </div>
+    <!-- Спасибо за вопрос -->
+    <div id="thanksquetsion" style="display:none;">
+        <div class="popup__cont">
+            <div class="popup__thanks">
+                <div class="popup__thanks-title">
+                    БЛАГОдарим вас<br> за вопрос
+                </div>
+                <div class="popup__thanks-subtitle">
+                    Ожидайте звонок от дизайнера.
+                    наши профессионалы ответят на все ваши вопросы
+                </div>
+            </div>
+            <button class="popup__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <g clip-path="url(#clip0_667_723)">
+                    <path d="M21.5667 20L30.7778 10.7889C30.9598 10.5763 31.0549 10.3029 31.0441 10.0233C31.0333 9.74363 30.9174 9.47837 30.7195 9.28049C30.5217 9.0826 30.2564 8.96668 29.9767 8.95588C29.6971 8.94507 29.4237 9.04019 29.2111 9.22222L20 18.4333L10.7889 9.21111C10.5797 9.00188 10.2959 8.88434 10 8.88434C9.70413 8.88434 9.42036 9.00188 9.21114 9.21111C9.00191 9.42034 8.88437 9.70411 8.88437 10C8.88437 10.2959 9.00191 10.5797 9.21114 10.7889L18.4334 20L9.21114 29.2111C9.09482 29.3107 9.00036 29.4333 8.93366 29.5711C8.86697 29.709 8.82949 29.8591 8.82358 30.0122C8.81767 30.1652 8.84346 30.3178 8.89932 30.4604C8.95518 30.6029 9.03991 30.7324 9.14819 30.8407C9.25647 30.949 9.38597 31.0337 9.52855 31.0896C9.67114 31.1455 9.82373 31.1712 9.97675 31.1653C10.1298 31.1594 10.2799 31.1219 10.4178 31.0553C10.5556 30.9886 10.6782 30.8941 10.7778 30.7778L20 21.5667L29.2111 30.7778C29.4237 30.9598 29.6971 31.0549 29.9767 31.0441C30.2564 31.0333 30.5217 30.9174 30.7195 30.7195C30.9174 30.5216 31.0333 30.2564 31.0441 29.9767C31.0549 29.6971 30.9598 29.4237 30.7778 29.2111L21.5667 20Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_667_723">
+                    <rect width="40" height="40" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </button>
+        </div>
+        
+    </div>
+    <!-- Cпасибо за заявку -->
+    <div id="thankrequest" style="display:none;">
+        <div class="popup__cont">
+            <div class="popup__thanks">
+                <div class="popup__thanks-title">
+                    Спасибо,<br>
+                            ваша заявка принята
+                </div>
+                <div class="popup__thanks-subtitle">
+                    Мы свяжемся с Вами в ближайшее время.
+                </div>
+            </div>
+            <button class="popup__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <g clip-path="url(#clip0_667_723)">
+                    <path d="M21.5667 20L30.7778 10.7889C30.9598 10.5763 31.0549 10.3029 31.0441 10.0233C31.0333 9.74363 30.9174 9.47837 30.7195 9.28049C30.5217 9.0826 30.2564 8.96668 29.9767 8.95588C29.6971 8.94507 29.4237 9.04019 29.2111 9.22222L20 18.4333L10.7889 9.21111C10.5797 9.00188 10.2959 8.88434 10 8.88434C9.70413 8.88434 9.42036 9.00188 9.21114 9.21111C9.00191 9.42034 8.88437 9.70411 8.88437 10C8.88437 10.2959 9.00191 10.5797 9.21114 10.7889L18.4334 20L9.21114 29.2111C9.09482 29.3107 9.00036 29.4333 8.93366 29.5711C8.86697 29.709 8.82949 29.8591 8.82358 30.0122C8.81767 30.1652 8.84346 30.3178 8.89932 30.4604C8.95518 30.6029 9.03991 30.7324 9.14819 30.8407C9.25647 30.949 9.38597 31.0337 9.52855 31.0896C9.67114 31.1455 9.82373 31.1712 9.97675 31.1653C10.1298 31.1594 10.2799 31.1219 10.4178 31.0553C10.5556 30.9886 10.6782 30.8941 10.7778 30.7778L20 21.5667L29.2111 30.7778C29.4237 30.9598 29.6971 31.0549 29.9767 31.0441C30.2564 31.0333 30.5217 30.9174 30.7195 30.7195C30.9174 30.5216 31.0333 30.2564 31.0441 29.9767C31.0549 29.6971 30.9598 29.4237 30.7778 29.2111L21.5667 20Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_667_723">
+                    <rect width="40" height="40" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </button>
+        </div>
+        
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/lozad.min.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
